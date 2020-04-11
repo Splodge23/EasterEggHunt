@@ -1,0 +1,110 @@
+<HTML>
+    <head>
+        <title>Easter Egg Hunt</title>
+    <style>
+        .one {
+            font-size: 110%;
+            text-align:center;
+            width:367px;
+            justify-content: space-around}
+        .two {
+            font-size: 110%;
+            text-align:center;
+            width:275px;
+            height: 45px;
+            justify-content: space-around}
+        .three {
+            font-size: 110%;
+            text-align:center;
+            width:220px;
+            justify-content: space-around}
+    </style>
+    </head>
+    <body>
+        <img id="World" src="WP.jpg" alt="Workplace" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="534,199,556,208" alt="Swizerland" onclick="Swizerland()">
+            <area shape="rect" coords="496,154,527,195" alt="UK" onclick="UK()">
+            <area shape="rect" coords="135,199,316,281" alt="US" onclick="US()">
+            <area shape="rect" coords="541,208,578,244" alt="Italy" onclick="Italy()">
+            <area shape="poly" coords="307,355,415,355,415,398,361,471,307,398" alt="Brazil" onclick="Brazil()">
+            <area shape="rect" coords="866,398,993,489" alt="Australia" onclick="Australia()">
+            <area shape="rect" coords="307,18,469,145" alt="Denmark" onclick="Denmark()">
+            <area shape="rect" coords="496,333,510,347" alt="CotedIvoire" onclick="CotedIvoire()">
+            <area shape="rect" coords="510,326,523,347" alt="Ghana" onclick="Ghana()">
+            <area shape="rect" coords="812,344,957,398" alt="Indonesia" onclick="Indonesia()">
+            <area shape="poly" coords="529,326,560,326,545,344,529,344" alt="Nigeria" onclick="Nigeria()">
+            <area shape="poly" coords="560,326,569,353,541,353,545,344" alt="Cameroon" onclick="Cameroon()">
+        </map>
+        <br>
+        <button id="Lindt" style="background-color:MediumTurquoise;" class="one">Where is Lindt chocolate from?</button>
+        <button id="Cadbury" style="background-color:MistyRose;" class="one">Where is Cadbury chocolate from?</button>
+        <button id="Hershey" style="background-color:PaleGreen;" class="one">Where is Hershey chocolate from?</button>
+        <br>
+        <button id="TallestEgg" style="background-color:Thistle;" class="two">Where was the tallest chocolate egg?</button>
+        <button id="LargestRabbit" style="background-color:#ffff66;" class="two">Where was the largest chocolate rabbit made?</button>
+        <button id="OldestRabbit" style="background-color:MediumTurquoise;" class="two">Where did the oldest rabbit ever live?</button>
+        <button id="HighestRabbit" style="background-color:MistyRose;" class="two">Where did was the highest rabbit jump?</button>
+        <br>
+        <button id="5" style="background-color:PaleGreen;;" class="three">Top</button>
+        <button id="4" style="background-color:Thistle;" class="three">5</button>
+        <button id="3" style="background-color:#ffff66;" class="three">producers</button>
+        <button id="2" style="background-color:MediumTurquoise;" class="three">of</button>
+        <button id="1" style="background-color:MistyRose;" class="three">cocoa?</button>
+        <script>
+        var swi = 0; var unk = 0; var usa = 0; var ita = 0; var bra = 0; var aus = 0;
+        var den = 0; var cot = 0; var gha = 0; var ind = 0; var nig = 0; var cam = 0;
+        function Swizerland(){
+            alert("Lindt chocolate comes from Swizerland.\nIn 1899, Rodolphe Lindt from Bern and joined David Sprüngli-Schwarz and Rudolf Sprüngli-Ammann in Zürich.\n53 years later, in 1952 Lindt started making Gold Bunnys.");
+            document.getElementById("Lindt").innerHTML="&#x1F430; &#x1F955; &#x1F407;";
+            swi=1}
+        function UK(){
+            alert("Cadbury chocolate comes from the UK.\nIn 1824, John Cadbury sold his cocoa and drinking chocolate from his grocer’s shop on Bull Street.\n147 years later, in 1971 Cadbury started making Creme Eggs.");
+            document.getElementById("Cadbury").innerHTML="&#x1F425; &#x1F423; &#x1F424;";
+            unk=1}
+        function US(){
+            alert("Hershey chocolate comes from the US.\nIn 1894, Milton Snavely Hershey established The Hershey Chocolate Company.\n13 years later, in 1907, Hershey started making Kisses.");
+            document.getElementById("Hershey").innerHTML=" &#x1F36B; &#x1F388; &#x1F36B;";
+            usa=1}
+        function Italy(){
+            alert("The tallest chocolate egg was in Italy.\nOn the 16th of April 2011 in Le Acciaierie Shopping Centre the worlds tallest egg stood at 10.39 m tall.");
+            document.getElementById("TallestEgg").innerHTML="&#x1F425; &#x1F423; &#x1F424;";
+            ita=1}
+        function Brazil(){
+            alert("The largest chocolate rabbit was in Brazil.\nThe Casa do Chocolate team received a Guinness world record on the 25th of February 2017 for their 4.52m high chocolate rabbit.");
+            document.getElementById("LargestRabbit").innerHTML="&#x1F430; &#x1F955; &#x1F407;";
+            bra=1}
+        function Australia(){
+            alert("Flopsy lived in Tasmania, Australia for 18 years and 10.75 months.");
+            document.getElementById("OldestRabbit").innerHTML="&#x1F430; &#x1F955; &#x1F407;";
+            aus=1}
+        function Denmark(){
+            alert("In Denmark, Mimrelunds Tösen broke the world record on the 28th of June 1997 when the bunny jumped 99.5cm high.");
+            document.getElementById("HighestRabbit").innerHTML="&#x1F430; &#x1F955; &#x1F407;";
+            den=1}
+        function CotedIvoire(){
+            alert("Côte d'Ivoire is the top producer of the cocoa. ");
+            document.getElementById("5").innerHTML="&#x1F33B; &#x1F339; &#x1F33C;";
+            cot=1}
+        function Ghana(){
+            alert("Ghana is the 2nd top producer of the cocoa.");
+            document.getElementById("4").innerHTML="&#x1F36B; &#x1F388; &#x1F36B;";
+            gha=1}
+        function Indonesia(){
+            alert("Indonesia is the 3rd top producer of the cocoa.");
+            document.getElementById("3").innerHTML="&#x1F33B; &#x1F339; &#x1F33C;";
+            ind=1}
+        function Nigeria(){
+            alert("Nigeria is the 4th top producer of the cocoa.");
+            document.getElementById("2").innerHTML="&#x1F36B; &#x1F388; &#x1F36B;";
+            nig=1}
+        function Cameroon(){
+            alert("Cameroon is the 5th top producer of the cocoa.");
+            document.getElementById("1").innerHTML="&#x1F33B; &#x1F339; &#x1F33C;";
+            cam=1}
+        function Win(){
+            if(swi+unk+usa+ita+bra+aus+den+cot+gha+ind+nig+cam==12){document.getElementById("World").src="he.jpg"}}
+        setInterval(Win,1000)
+        </script>
+    </body>
+</html> 
